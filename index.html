@@ -1,8 +1,86 @@
 <!DOCTYPE HTML>
 <html xmlns="http://www.w3.org/1999/xhtml">
 	<head>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1">		
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1">
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="./css/imgslider.css">
+		<script type="text/javascript" src="./js/imgslider.js"></script>
+		<style>
+			h1{
+				margin: auto;
+				text-align: center;
+			}
+			.codeblock{
+				margin-top:15px;
+				border:1px solid black;
+				background: #ddd;
+			}
+			#caption{
+				font-size: .8em;
+				color:#222;
+			}
+			code p{
+				padding-left: 10px;
+			}
+			#mainDiv{
+				width:90%;
+				margin: auto;
+				max-width:600px;
+				margin:auto;
+			}
+		</style>	
 	</head>
 	<body>
+		<div id="mainDiv" >			
+			<h1>Simple Image Slider</h1>
+			<div class="slider responsive">			
+				<div class="left image">
+					<img src="./img/before.jpg"/>
+				</div>
+				<div class="right image">
+					<img src="./img/after.jpg"/>
+				</div>
+			</div>
+			<p id="caption">Trains at the Howard station, Chicago. (Photos: Kavya Sukumar)</p>
+
+			<h2>Getting started</h2>
+			<p>Download the code from <a href="./imgslider-1.0.zip">here</a></p>
+			<p> Unzip and include the files on your page</p>
+			<div class="codeblock">
+				<code>
+					<p>&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;./css/imgslider.css&quot;&gt;</p>
+					<p>&lt;script type=&quot;text/javascript&quot; src=&quot;./js/imgslider.js&quot;&gt;&lt;/script&gt;</p>
+				</code>
+			</div>
+			<p> HTML decoration for your images goes like this</p>
+			<div class="codeblock">
+				<code>
+					<p>&lt;div class=&quot;slider&quot;&gt;</p>		
+					<p>&nbsp;&nbsp;&lt;div class=&quot;left image&quot;&gt;</p>
+					<p>&nbsp;&nbsp;&nbsp;&nbsp;&lt;img src=&quot;before.jpg&quot;/&gt;</p>
+					<p>&nbsp;&nbsp;&lt;/div&gt;</p>
+					<p>&nbsp;&nbsp;&lt;div class=&quot;right image&quot;&gt;</p>
+					<p>&nbsp;&nbsp;&nbsp;&nbsp;&lt;img src=&quot;after.jpg&quot;/&gt;</p>
+					<p>&nbsp;&nbsp;&lt;/div&gt;</p>
+					<p>&lt;/div&gt;</p>
+				</code>
+			</div>
+			<p> Include the following near the end of the page.</p>
+			<div class="codeblock">
+				<code>
+					<p>&lt;script type=&quot;text/javascript&quot;&gt;</p>
+					<p>&nbsp;&nbsp;$(&#39;.slider&#39;).slider();</p>
+					<p>&lt;/script&gt;</p>
+				</code>
+			</div>
+			<div>
+				<h2> Known Issues</h2>
+				<p> Touch events haven't been added yet. It may not work as expected on tablets and phones</p>
+				<p> Files have not been min-ified</p>
+			</div>
+		</div>
+		<script type="text/javascript">
+			$('.slider').slider();
+		</script>
 	</body>
 </html>
