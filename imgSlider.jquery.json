@@ -1,14 +1,14 @@
 {
     "name": "imgSlider",
-    "version": "1.1.0",
-    "title": "jQuery.imgSlider",
-    "description": "A jQuery plugin for comparing images side by side",
+    "version": "1.1.1",
+    "title": "Before and after slider",
+    "description": "A jQuery plugin for comparing before and after images side by side",
     "keywords": [
-        "ui", "image", "slider", "compare"
+        "ui", "image", "slider", "compare","responsive"
     ],
     "author": {
         "name": "Kavya Sukumar",
-        "url": "https://github.com/kavyasukumar"
+        "url": "http://github.com/kavyasukumar"
     },
     "maintainers": [
         {
