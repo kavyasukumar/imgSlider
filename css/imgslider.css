@@ -20,3 +20,19 @@
 	margin-right: -5px;
 	overflow: hidden;
 }
+
+.slider .instruction{
+	position: absolute;
+	top:50%;
+	z-index:1000;
+	width: 100%;
+	text-align: center;
+}
+
+.slider .instruction p{
+	background: white;	
+	display: inline;
+	padding: 1%;
+	font-size: 1em;
+	text-transform: uppercase;
+}

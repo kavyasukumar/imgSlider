@@ -2,17 +2,19 @@ A simple jquery plugin for creating image comparison sliders. See live demo at h
 
 ##Getting started
 
-Download the code from [here](http://kavyasukumar.com/apps/imgSlider/imgslider-1.0.zip)
+Download the code from [here](http://github.com/kavyasukumar/imgSlider/tree/master/distr)
 
 Unzip and include the files on your page
 ``` 
-    <link rel="stylesheet" type="text/css" href="./css/imgslider.css">
+   <link rel="stylesheet" type="text/css" href="imgslider.css">
 
-    <script type="text/javascript" src="./js/imgslider.js"></script>
+	<script type="text/javascript" src="imgslider-1.1-min.js"></script>
 ```
 HTML decoration for your images goes like this
 ```
 <div class="slider">
+
+ <div class="slider responsive">
 
   <div class="left image">
 
@@ -27,6 +29,8 @@ HTML decoration for your images goes like this
   </div>
 
 </div>
+
+</div>
 ```
 Include the following near the end of the page.
 ```
@@ -36,7 +40,27 @@ Include the following near the end of the page.
 
 </script>
 ```
-###Known Issues
+### Initialization options
 
-1. Touch events haven't been added yet. It may not work as expected on tablets and phones
-2. Files have not been minified
+The following are the initialization options and their default values
+```
+triggerEvents: "tap click"
+
+initialPosition: .5
+
+showInstruction: true
+
+instructiontext: "Click and Drag"
+```
+You can override the values during initialization by passing in the options like this
+```
+	<script type="text/javascript">
+
+  $('.slider').slider({ instructionText:"New instructions here" });
+
+</script>
+```
+
+###Dependencies
+1. Jquery
+2. Jquery mobile
