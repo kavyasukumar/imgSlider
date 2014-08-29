@@ -2,7 +2,7 @@
     "name": "imgSlider",
     "version": "1.1.0",
     "title": "jQuery.imgSlider",
-    "description": "simple jQuery plugin for comparing images with slider",
+    "description": "A jQuery plugin for comparing images side by side",
     "keywords": [
         "ui", "image", "slider", "compare"
     ],
