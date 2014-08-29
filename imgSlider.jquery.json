@@ -1,0 +1,34 @@
+{
+    "name": "imgSlider",
+    "version": "1.1.0",
+    "title": "jQuery.imgSlider",
+    "description": "simple jQuery plugin for comparing images with slider",
+    "keywords": [
+        "ui", "image", "slider", "compare"
+    ],
+    "author": {
+        "name": "Kavya Sukumar",
+        "url": "https://github.com/kavyasukumar"
+    },
+    "maintainers": [
+        {
+            "name": "Kavya Sukumar",
+            "email": "fixthatcode@outlook.com"
+        }
+    ],
+    "licenses": [
+        {
+            "type":"MIT",
+            "url":"http://opensource.org/licenses/MIT"
+        }
+    ],
+    "bugs": "http://github.com/kavyasukumar/imgSlider/issues",
+    "homepage": "http://kavyasukumar.com/apps/imgslider/",
+    "docs": "http://kavyasukumar.com/apps/imgslider/",
+    "demo": "http://kavyasukumar.com/apps/imgslider/",
+    "download": "http://github.com/kavyasukumar/imgSlider/tree/master/distr",
+    "dependencies": {
+        "jquery": ">=1.11.0",
+        "jquery Mobile": ">=1.4.3"
+    }
+}
