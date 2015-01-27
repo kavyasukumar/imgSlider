@@ -16,7 +16,10 @@
 				$instrDiv.children("p")
 				.text(settings.instructionText);
 
-				$(this).append($instrDiv);				
+				$(this).append($instrDiv);	
+
+				//set left offset of instruction
+				$instrDiv.css('left', (settings.initialPosition - $instrDiv.children("p").width()/(2*$width))*100+'%')
 			}			
 		}
 
@@ -32,14 +35,14 @@
 		var enableSliderDrag = function(e){
 			e.preventDefault();
 			$(this).css('cursor' , 'ew-resize')
-				.on('vmousemove.sliderns', slideResize)
+				.on('mousemove.sliderns', slideResize)
 				.on('touchmove.sliderns', slideResize);
 		}
 
 		var disableSliderDrag = function(e){
 			e.preventDefault();
 			$(this).css('cursor', 'normal')
-				.off('vmousemove.sliderns')
+				.off('mousemove.sliderns')
 				.off('touchmove.sliderns');
 		}
 
@@ -51,13 +54,13 @@
 		$(window).on('resize', redrawSlider);
 		return this.each(init)
 			.on(settings.triggerEvents,slideResize)
-			.on("vmousedown", enableSliderDrag)
-			.on("vmouseup", disableSliderDrag);
+			.on("mousedown", enableSliderDrag)
+			.on("mouseup", disableSliderDrag);
 			
 	};
 
 	$.fn.slider.defaultOptions= {
-			triggerEvents: "tap click",
+			triggerEvents: "click",
 			initialPosition: .5,
 			showInstruction: true,
 			instructionText: "Click and Drag"

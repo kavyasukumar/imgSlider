@@ -1,6 +1,6 @@
 {
     "name": "imgSlider",
-    "version": "1.1.1",
+    "version": "1.2.0",
     "title": "Before and after slider",
     "description": "A jQuery plugin for comparing before and after images side by side",
     "keywords": [
@@ -28,7 +28,6 @@
     "demo": "http://kavyasukumar.com/apps/imgslider/",
     "download": "http://github.com/kavyasukumar/imgSlider/tree/master/distr",
     "dependencies": {
-        "jquery": ">=1.11.0",
-        "jquery Mobile": ">=1.4.3"
+        "jquery": ">=1.11.0"
     }
 }
