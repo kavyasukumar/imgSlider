@@ -6,9 +6,9 @@ Download the code from [here](http://github.com/kavyasukumar/imgSlider/tree/mast
 
 Unzip and include the files on your page
 ``` 
-   <link rel="stylesheet" type="text/css" href="imgslider.css">
+   <link rel="stylesheet" type="text/css" href="imgslider-1.2.-min.css">
 
-	<script type="text/javascript" src="imgslider-1.1-min.js"></script>
+	<script type="text/javascript" src="imgslider-1.2.1-min.js"></script>
 ```
 HTML decoration for your images goes like this
 ```
@@ -44,7 +44,7 @@ Include the following near the end of the page.
 
 The following are the initialization options and their default values
 ```
-triggerEvents: "tap click"
+triggerEvents: "click"
 
 initialPosition: .5
 
@@ -62,5 +62,4 @@ You can override the values during initialization by passing in the options like
 ```
 
 ###Dependencies
-1. Jquery
-2. Jquery mobile
+* Jquery
