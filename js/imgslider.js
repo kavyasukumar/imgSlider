@@ -5,9 +5,10 @@
 		var settings = $.extend($.fn.slider.defaultOptions, options);
 
 		var init = function(){
-			var $width = $(this).width();
-			$(this).find('.image img').css('width' , $width + 'px');
-			$(this).find('.left.image').css('width' , Math.floor($width * settings.initialPosition));
+			var $this = $(this);
+			var width = $this.width();
+			$this.find('.image img').css('width' , width + 'px');
+			$this.find('.left.image').css('width' , Math.floor(width * settings.initialPosition));
 			if(settings.showInstruction){
 				var $instrDiv = $("<div></div>")
 				.addClass("instruction")
@@ -16,10 +17,10 @@
 				$instrDiv.children("p")
 				.text(settings.instructionText);
 
-				$(this).append($instrDiv);	
+				$this.append($instrDiv);	
 
 				//set left offset of instruction
-				$instrDiv.css('left', (settings.initialPosition - $instrDiv.children("p").width()/(2*$width))*100+'%')
+				$instrDiv.css('left', (settings.initialPosition - $instrDiv.children("p").width()/(2*width))*100+'%')
 			}			
 		}
 
