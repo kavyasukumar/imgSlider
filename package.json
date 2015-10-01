@@ -1,0 +1,23 @@
+{
+  "name": "imgSlider",
+  "version": "2.0.0",
+  "description": "A jQuery plugin for comparing before and after images side by side",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kavyasukumar/imgSlider.git"
+  },
+  "keywords": [
+    "jquery-plugin",
+    "ecosystem:jquery"
+  ],
+  "author": "Kavya Sukumar <fixthatcode@outlook.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kavyasukumar/imgSlider/issues"
+  },
+  "homepage": "https://github.com/kavyasukumar/imgSlider"
+}
