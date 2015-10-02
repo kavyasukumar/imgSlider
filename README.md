@@ -6,9 +6,9 @@ Download the code from [here](http://github.com/kavyasukumar/imgSlider/tree/mast
 
 Unzip and include the files on your page
 ```html 
-   <link rel="stylesheet" type="text/css" href="imgslider-1.2.-min.css">
+   <link rel="stylesheet" type="text/css" href="imgslider-2.0.0--min.css">
 
-	<script type="text/javascript" src="imgslider-1.2.1-min.js"></script>
+	<script type="text/javascript" src="imgslider-2.0.0-min.js"></script>
 ```
 HTML decoration for your images goes like this
 ```html
@@ -44,8 +44,6 @@ Include the following near the end of the page.
 
 The following are the initialization options and their default values
 ```json
-triggerEvents: "click"
-
 initialPosition: .5
 
 showInstruction: true
