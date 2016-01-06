@@ -11,18 +11,23 @@
 		$this.find('.image img').css('width' , width + 'px');
 		$this.find('.left.image').css('width' , Math.floor(width * settings.initialPosition));
 		if (settings.showInstruction) {
-			var $instrDiv = $('<div></div>')
-				.addClass('instruction')
-				.append('<p></p>');
+			// Check if instruction div exists before adding
+			var $instrDiv = null;
+			$instrDiv = $('div.instruction');
+
+			if ($instrDiv.length === 0) {
+				$instrDiv = $('<div></div>')
+					.addClass('instruction')
+					.append('<p></p>');
+				$this.append($instrDiv);
+			}
 
 			$instrDiv.children('p')
 				.text(settings.instructionText);
 
-			$this.append($instrDiv);	
-
 			//set left offset of instruction
 			$instrDiv.css('left', (settings.initialPosition - $instrDiv.children('p').width() / (2 * width)) * 100 + '%');
-		}			
+		}
 	};
 
 	var slideResize = function (e) {
@@ -53,9 +58,9 @@
 	};
 
 	var redrawSlider = function () {
-		return $('.slider.responsive').each(init);					
+		return $('.slider.responsive').each(init);
 	};
-	
+
 	$(window).on('resize', redrawSlider);
 	return this.each(init)
 		.on('click touchstart', slideResize)
@@ -67,6 +72,6 @@
 			initialPosition: 0.5,
 			showInstruction: true,
 			instructionText: 'Click and Drag'
-	};	
+	};
 
 }(jQuery));

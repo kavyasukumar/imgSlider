@@ -25,11 +25,11 @@
 	position: absolute;
 	top:50%;
 	z-index:1000;
-	width: 100%;
+	width: 95%;
 }
 
 .slider .instruction p{
-	background: white;	
+	background: white;
 	display: inline;
 	padding: 1%;
 	font-size: 1em;
