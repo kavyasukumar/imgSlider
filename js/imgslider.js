@@ -40,7 +40,9 @@
 		} else {
 			width = e.offsetX === undefined ? e.pageX - e.currentTarget.offsetLeft : e.offsetX;
 		}
-		$(this).find('.left.image').css('width', width + 'px');
+		if (width<=$(this).width()){
+			$(this).find('.left.image').css('width', width + 'px');
+		}
 	};
 
 	var enableSliderDrag = function (e) {
