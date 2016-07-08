@@ -36,9 +36,9 @@
 		$(e.currentTarget).children('.instruction').hide();
 		var width;
 		if(e.type.startsWith('touch')){
-			width = e.originalEvent.touches[0].clientX - e.currentTarget.offsetLeft;
+			width = e.originalEvent.touches[0].clientX - e.originalEvent.layerX;
 		} else {
-			width = e.offsetX === undefined ? e.pageX - e.currentTarget.offsetLeft : e.offsetX;
+			width = e.offsetX === undefined ? e.pageX - e.originalEvent.layerX : e.offsetX;
 		}
 		if (width<=$(this).width()){
 			$(this).find('.left.image').css('width', width + 'px');
