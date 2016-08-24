@@ -2,13 +2,15 @@ A simple jquery plugin for creating image comparison sliders. See live demo at h
 
 ##Getting started
 
-Download the code from [here](http://github.com/kavyasukumar/imgSlider/tree/master/distr)
+Run `npm install img-slider` from the root directory of your application.
 
-Unzip and include the files on your page
-```html 
-   <link rel="stylesheet" type="text/css" href="imgslider-2.0.1--min.css">
+Include jQuery on your page if you don't already have it. You can use a CDN or the node_module
 
-	<script type="text/javascript" src="imgslider-2.0.1-min.js"></script>
+Include the following lines on your page
+```html
+   <link rel="stylesheet" type="text/css" href="node_modules/img-slider/distr/imgslider.min.css">
+
+	<script type="text/javascript" src="node_modules/img-slider/distr/imgslider.min.js"></script>
 ```
 HTML decoration for your images goes like this
 ```html
