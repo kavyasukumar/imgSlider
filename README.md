@@ -1,3 +1,5 @@
+[![npm version](https://badge.fury.io/js/img-slider.svg)](https://badge.fury.io/js/img-slider)
+
 A simple jquery plugin for creating image comparison sliders. See live demo at http://kavyasukumar.com/apps/imgSlider/
 
 ##Getting started
