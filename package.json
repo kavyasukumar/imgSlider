@@ -1,10 +1,11 @@
 {
   "name": "img-slider",
-  "version": "1.1.0",
+  "version": "2.2.0",
   "description": "A jQuery plugin for comparing before and after images side by side",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "minify --output distr/imgslider.min.js js/imgslider.js && minify --output distr/imgslider.min.css css/imgslider.css"
   },
   "repository": {
     "type": "git",

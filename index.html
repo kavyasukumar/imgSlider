@@ -2,9 +2,9 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 	<head>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1">
-		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-		<link rel="stylesheet" type="text/css" href="distr/2.0.1/imgslider-2.0.1-min.css">
-		<script type="text/javascript" src="distr/2.0.1/imgslider-2.0.1-min.js"></script>
+		<script type="text/javascript" src="node_modules/jquery/dist/jquery.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="node_modules/img-slider/distr/imgslider.min.css">
+		<script type="text/javascript" src="node_modules/img-slider/distr/imgslider.min.js"></script>
 		<style>
 			h1{
 				margin: auto;
@@ -44,12 +44,18 @@
 			<p id="caption">Trains at the Howard station, Chicago. (Photos: Kavya Sukumar)</p>
 
 			<h2>Getting started</h2>
-			<p>Download the latest code from <a href="http://github.com/kavyasukumar/imgSlider/tree/master/distr">here</a></p>
+			<p>Run <code>npm install img-slider</code> from the root directory of your application.</p>
+			<p> Include jQuery on your page if you don't already have it. You can use a CDN or the node_module</p>
+			<div class="codeblock">
+				<code>
+					<p>&lt;script type=&quot;text/javascript&quot; src=&quot;node_modules/jquery/dist/jquery.min.js&quot;&gt;&lt;/script&gt;</p>
+				</code>
+			</div>
 			<p> Include the files on your page</p>
 			<div class="codeblock">
 				<code>
-					<p>&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;imgslider-2.0.0-min.css&quot;&gt;</p>
-					<p>&lt;script type=&quot;text/javascript&quot; src=&quot;imgslider-2.0.0-min.js&quot;&gt;&lt;/script&gt;</p>
+					<p>&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;node_modules/img-slider/distr/imgslider.min.css&quot;&gt;</p>
+					<p>&lt;script type=&quot;text/javascript&quot; src=&quot;node_modules/img-slider/distr/imgslider.min.js&quot;&gt;&lt;/script&gt;</p>
 				</code>
 			</div>
 			<p> HTML decoration for your images goes like this</p>
