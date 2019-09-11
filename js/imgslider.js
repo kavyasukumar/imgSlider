@@ -13,7 +13,7 @@
 		if (settings.showInstruction) {
 			// Check if instruction div exists before adding
 			var $instrDiv = null;
-			$instrDiv = $('div.instruction');
+			$instrDiv = $('div.instruction', $this);
 
 			if ($instrDiv.length === 0) {
 				$instrDiv = $('<div></div>')
